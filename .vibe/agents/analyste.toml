@@ -1,0 +1,16 @@
+agent_type = "subagent"
+description = "TODO : une phrase. Quand faut-il appeler cet agent ?"
+enabled_tools = ["read_file", "write_file", "edit", "bash", "skill"]
+enabled_skills = []   # TODO : quelles skills ?
+instructions = '''
+TODO :
+- quel fichier l'agent écrit ;
+- quelles données il lit, et comment ;
+- les 5 questions auxquelles le script doit répondre ;
+- ce qu'il n'a pas le droit de faire ;
+- combien d'essais au plus ;
+- la forme de sa réponse (combien de lignes ?).
+'''
+
+[tools.bash]
+allowlist = []   # TODO : une seule commande
