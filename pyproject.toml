@@ -7,7 +7,9 @@ authors = [
     { name = "Eleonore Hasler", email = "eleonore@hasler.fr" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "pandas>=3.1.1",
+]
 
 [project.scripts]
 devoir-hye = "devoir_hye:main"

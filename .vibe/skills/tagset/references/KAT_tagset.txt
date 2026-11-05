@@ -1,0 +1,33 @@
+A	adjective
+I+Adv	adverbe
+I+Conj	conjonction
+I+Intj	interjection
+I+Part	particule
+I+Prep	préposition
+N+Ant	anthoponymic name
+N+Com	nous
+N+Pat	patronimic name
+N+Prop	propre name
+N+Top	toponymic name
+NUM+Car	cardinal number
+NUM+Ord		ordinal number
+NUMA+Car	alphabetic cardinal number
+NUMA+Ord	alphabetic ordinal number
+PRO+Dem	demonstrative pronoun
+PRO+Ind	indifinite pronoun
+PRO+Int	interrogative pronoun
+PRO+Per1p	personal pronoun 1p
+PRO+Per1s	personal pronoun 1s
+PRO+Per2p	personal pronoun 2p
+PRO+Per2s	personal pronoun 2s
+PRO+Pos1p	personal pronoun 2p
+PRO+Pos1p	possessive pronoun 1p
+PRO+Pos1s	possessive pronoun 1s
+PRO+Pos2p	possessive pronoun 2p
+PRO+Pos2s	possessive pronoun 2s
+PRO+Pos3p	possessive pronoun 3p
+PRO+Pos3s	possessive pronoun 3p
+PRO+Rec	reciprocal pronoun
+PRO+Rel	relative pronoun
+V+Mas	mazdar verb
+V+Part	participial verb

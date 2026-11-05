@@ -1,0 +1,46 @@
+ADJ	Adjective
+ADV	Adverb
+CARD	Cardinal Number
+NAME	Proper Name
+NAME_ant	Anthroponymic Name
+NAME_top	Toponymic Name
+NOUN	Common Noun
+ORD	Ordinal Number
+PART	Particle
+PRO_dem	Demonstrative Pronoun
+PRO_ind	Indefinite Pronoun
+PRO_int	Interrogative Pronoun
+PRO_pers	Personal Pronoun
+V1	Peʽal Verb
+V2	Etpeʽel Verb
+V3	Paʽʽel Verb
+V4	Etpaʽʽal Verb
+V5	Apʽel Verb
+V6	Ettapʽal Verb
+V7	Šapʽel Verb
+V8	Eštapʽal Verb
+V9	Sapʽel Verb
+V10	Estapʽal Verb
+V11	Tapʽel Verb
+V12	Ettap‘al Verb
+V13	Paiʽel and Paiʽal Verb
+V14	Etpaiʽal Verb
+V15	Pauʽel Verb
+V16	Etpauʽal  Verb
+V17	Paʽlel or Paʽlal Verb
+V18	Etpaʽlel or Etpaʽlal Verb
+V19	Palpel Verb
+V20	Etpalpal Verb
+V21	Pam‘el Verb
+V22	Etpam‘el Verb
+V23	Parʽel Verb
+V24	Etparʽal Verb
+V25	Paʽli Verb
+V26	Etpaʽli Verb
+V27	Peʽalʽel Verb
+V28	Etpeʽalʽel  Verb
+V29	Quadriliteral Verb
+V30	Quadriliteral Passive Verb
+V31	Pe‘aw‘al Verb
+V32	Etpe‘aw‘al Verb
+V33	transliterated Verb
