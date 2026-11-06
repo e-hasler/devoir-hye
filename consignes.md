@@ -17,8 +17,8 @@ devoir-hye/
 ├── data/                             ← à récupérer dans le dépôt du cours
 │   ├── HYE_train.tsv
 │   ├── HYE_test_in-domain.tsv
-│   ├── HYE_test_out-of-domain.tsv
-│   └── HYE_tagset.txt
+│   └── HYE_test_out-of-domain.tsv
+│   
 ├── scripts/analyser.py               ← écrit par l'agent, pas par vous
 ├── RAPPORT.md                        ← à écrire
 └── .vibe/
@@ -42,7 +42,6 @@ devoir-hye/
    HYE_train.tsv
    HYE_test_in-domain.tsv
    HYE_test_out-of-domain.tsv
-   HYE_tagset.txt
 
 3. **Le `.gitignore`.** Il doit au moins empêcher de commiter l'environnement virtuel (`.venv/`), les caches Python et tout fichier `.env`. Vérifiez avec `git status` avant votre premier commit.
 

@@ -1,0 +1,9 @@
+active_model = "mistral-medium-3.5"
+
+# Tools available to the head agent for coordinating the workflow.
+# Each subagent declares its own narrower tool set in .vibe/agents/*.toml.
+
+[tools]
+read_file = true
+write_file = false
+edit = false

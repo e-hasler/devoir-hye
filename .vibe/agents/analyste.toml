@@ -1,16 +1,23 @@
 agent_type = "subagent"
-description = "TODO : une phrase. Quand faut-il appeler cet agent ?"
+description = "Elabore un script pour répondre à des questions sur le corpus arménien (HYE)"
 enabled_tools = ["read_file", "write_file", "edit", "bash", "skill"]
-enabled_skills = []   # TODO : quelles skills ?
+enabled_skills = ["pandas-tuto", "tagset"] # TODO : check syntax
 instructions = '''
-TODO :
-- quel fichier l'agent écrit ;
-- quelles données il lit, et comment ;
-- les 5 questions auxquelles le script doit répondre ;
-- ce qu'il n'a pas le droit de faire ;
-- combien d'essais au plus ;
-- la forme de sa réponse (combien de lignes ?).
+
+- Lit uniquement les fichiers data/*.tsv, .vibe/skills/tagset/references/HYE_tagset.txt, le notebook data/3_pandas_corpus.ipynb, .vibe/skills/pandas-tuto/SKILL.md et .vibe/skills/tagset/SKILL.md.
+- Ecrit scripts/analyser.py qui extrait les informations des fichiers data/*.tsv et .vibe/skills/tagset/references/HYE_tagset.txt en utilisant uniquement les commandes décrites dans skills/pandas-tuto/SKILL.md.
+- Le script scripts/analyser.py doit afficher la réponse aux questions 1 à 5 dans le bon format dans output/result_1.txt
+- Les questions sont les suivantes :
+1. Quelles sont les 5 catégories (`pos`) les plus fréquentes dans le train ?
+2. Quelle proportion des mots du train sont des formes composées (`@` dans `pos`) ? Quelles sont les 5 combinaisons les plus fréquentes ?
+3. Combien de mots du train se terminent par l'article suffixé (`pos` qui finit par `@PRO+Dem`) ? Combien commencent par la préposition `զ` (`lemma` qui commence par `զ@`) ?
+4. Quelles étiquettes du train **ne figurent pas** dans `HYE_tagset.txt`, et combien de fois chacune apparaît-elle ? Attention à deux pièges :
+   - certains noms d'étiquettes du tagset se terminent par une espace ;
+   - une étiquette composée est valide si chacune de ses parties l'est.
+5. Refaites le **dictionnaire** de la partie 12 du notebook, avec le train arménien. Quel score obtient-il sur le test `in-domain`, puis sur le test `out-of-domain` ? Le score baisse-t-il autant qu'en grec (0,73 contre 0,51) ?
+- Le bon format de sortie signifie que la réponse de chaque question est écrite sous un titre `Q1` à `Q5` avant chaque réponse
+- Droit à 3 essais tout au plus. En cas d'échec, décris les difficultés rencontrées de manière concise dans output/result_1.txt
 '''
 
 [tools.bash]
-allowlist = []   # TODO : une seule commande
+allowlist = ["uv run python scripts/analyser.py"]

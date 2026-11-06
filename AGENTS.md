@@ -1,20 +1,22 @@
 # Mini-analyste pandas : arménien classique (HYE)
 
-<!-- TODO : en une phrase, l'objectif du projet. -->
+Répondre à des questions sur le corpus arménien (HYE) uniquement en écrivant et en lançant un script pandas.
 
 ## Règles
-<!-- TODO : 3 ou 4 règles, une par ligne. Pensez à :
-     - comment lancer Python ;
-     - d'où doivent venir les chiffres ;
-     - ce que l'agent n'a pas le droit de lire. -->
--
--
--
 
+- L'agent principal ne calcule pas directement, il délègue absolument tout à l'agent analyste.
+
+- Uniquement le droit de lancer l'agent analyste.
+- Ne lance aucun script.
+- L'agent principal a l'interdiction d'accéder à tout fichier ne se situant pas sous .vibe/
+
+- Interdiction absolue de modifier .vibe/
+
+- En cas d'impossibilité d'effectuer une tâche, le signaler dans ta réponse avec la tâche impossible, la cause de l’échec,
+la commande exécutée si pertinente, 
+les fichiers concernés.
 ## Rôles
-<!-- TODO : quel agent fait quoi. -->
-- 
-
+- L'agent analyste répond à des questions sur le corpus arménien (HYE) uniquement en écrivant et en lançant un script python.
 ## Repères
 - Données : `data/HYE_train.tsv`, `data/HYE_test_in-domain.tsv`, `data/HYE_test_out-of-domain.tsv`, colonnes `text_form form lemma pos`.
-- Tagset : `data/HYE_tagset.txt` (étiquette, tabulation, définition).
+- Tagset : `.vibe/skills/tagset/references/<LANGUE>_tagset.txt` (étiquette, tabulation, définition).
