@@ -2,7 +2,9 @@ import pandas as pd
 import os
 
 # Chemins vers les fichiers
-BASE_DIR = "/Users/eleonore.hasler/Documents/enc_year_1/git_class/devoir-hye"
+#BASE_DIR = "/Users/eleonore.hasler/Documents/enc_year_1/git_class/devoir-hye"
+# utiliser os.path.join pour construire les chemins de manière portable
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) # correspond à devoir-hye
 TRAIN_PATH = os.path.join(BASE_DIR, "data", "HYE_train.tsv")
 TEST_IN_DOMAIN_PATH = os.path.join(BASE_DIR, "data", "HYE_test_in-domain.tsv")
 TEST_OUT_DOMAIN_PATH = os.path.join(BASE_DIR, "data", "HYE_test_out-of--domain.tsv")
