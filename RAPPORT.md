@@ -25,6 +25,7 @@
 
 Note : L'agent principal a finalement corrigé le chemin TEST_OUT_DOMAIN_PATH, ça a permis le sous-agent d'obtenir les résultats en faisant tourner `scripts/analyser.py` mais l'agent principal n'avait normalement pas la permission.
 
+Note à moi-même : Les résultats ont été obtenus avec le code écrit uniquement par le sous-agent mais j'ai corrigé à la main avant de push sur GitHub le path BASE_DIR pour utiliser `os.path.dirname` afin que le code de l'agent soit utilisable par tout le monde.
 ## Output
 
 ```
