@@ -1,0 +1,29 @@
+Q1
+Les 5 catégories (pos) les plus fréquentes dans le train :
+  V: 1008
+  N+Com: 786
+  I+Conj: 745
+  I+Prep: 310
+  A: 295
+
+Q2
+Proportion des mots avec des formes composées (@ dans pos) : 0.142
+Les 5 combinaisons les plus fréquentes :
+  N+Com@PRO+Dem: 166
+  I+Prep@N+Com: 164
+  I+Prep@N+Com@PRO+Dem: 76
+  A@PRO+Dem: 41
+  I+Prep@PRO+Dem: 37
+
+Q3
+Nombre de mots avec pos finissant par @PRO+Dem : 383
+Nombre de mots avec lemma commençant par զ@ : 339
+
+Q4
+Étiquettes du train qui ne figurent pas dans HYE_tagset.txt :
+  Aucune étiquette invalide trouvée dans le train.
+
+Q5
+Score sur le test in-domain : 0.5667
+Score sur le test out-of-domain : 0.5159
+La baisse est de 0.05, contre 0.22 en grec. La baisse est moins forte qu'en grec.
