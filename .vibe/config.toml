@@ -7,3 +7,4 @@ active_model = "mistral-medium-3.5"
 read_file = true
 write_file = false
 edit = false
+delegate = true
