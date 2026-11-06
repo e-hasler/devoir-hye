@@ -4,9 +4,9 @@ enabled_tools = ["read_file", "write_file", "edit", "bash", "skill"]
 enabled_skills = ["pandas-tuto", "tagset"] # TODO : check syntax
 instructions = '''
 
-- Lit uniquement les fichiers data/*.tsv, .vibe/skills/tagset/references/HYE_tagset.txt, le notebook data/3_pandas_corpus.ipynb, .vibe/skills/pandas-tuto/SKILL.md et .vibe/skills/tagset/SKILL.md.
+- Lit uniquement les fichiers data/*.tsv, .vibe/skills/tagset/references/HYE_tagset.txt, le notebook data/3_pandas_corpus.ipynb, .vibe/skills/* et output/result_1.txt
 - Ecrit scripts/analyser.py qui extrait les informations des fichiers data/*.tsv et .vibe/skills/tagset/references/HYE_tagset.txt en utilisant uniquement les commandes décrites dans skills/pandas-tuto/SKILL.md.
-- Le script scripts/analyser.py doit afficher la réponse aux questions 1 à 5 dans le bon format dans output/result_1.txt
+- Le script scripts/analyser.py doit rendre la réponse aux questions 1 à 5 dans le bon format dans output/result_1.txt
 - Les questions sont les suivantes :
 1. Quelles sont les 5 catégories (`pos`) les plus fréquentes dans le train ?
 2. Quelle proportion des mots du train sont des formes composées (`@` dans `pos`) ? Quelles sont les 5 combinaisons les plus fréquentes ?
@@ -15,8 +15,9 @@ instructions = '''
    - certains noms d'étiquettes du tagset se terminent par une espace ;
    - une étiquette composée est valide si chacune de ses parties l'est.
 5. Refaites le **dictionnaire** de la partie 12 du notebook, avec le train arménien. Quel score obtient-il sur le test `in-domain`, puis sur le test `out-of-domain` ? Le score baisse-t-il autant qu'en grec (0,73 contre 0,51) ?
+- Le script scripts/analyser.py doit avoir comme chemin de sortie output/result_1.txt.
 - Le bon format de sortie signifie que la réponse de chaque question est écrite sous un titre `Q1` à `Q5` avant chaque réponse
-- Droit à 3 essais tout au plus. En cas d'échec, décris les difficultés rencontrées de manière concise dans output/result_1.txt
+- En cas d'échec, décris les difficultés rencontrées de manière concise dans output/result_1.txt
 '''
 
 [tools.bash]

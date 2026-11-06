@@ -6,15 +6,16 @@ Répondre à des questions sur le corpus arménien (HYE) uniquement en écrivant
 
 - L'agent principal ne calcule pas directement, il délègue absolument tout à l'agent analyste.
 
-- Uniquement le droit de lancer l'agent analyste.
+- Uniquement le droit de lancer l'agent analyste, et ce trois fois maximum.
 - Ne lance aucun script.
-- L'agent principal a l'interdiction d'accéder à tout fichier ne se situant pas sous .vibe/
+- L'agent principal a l'interdiction d'accéder à tout fichier ne se situant pas sous .vibe/, scripts/ ou output/
 
-- Interdiction absolue de modifier .vibe/
+- Interdiction absolue de modifier .vibe/, scripts/ ou output/, il faut déléguer à l'analyste
 
 - En cas d'impossibilité d'effectuer une tâche, le signaler dans ta réponse avec la tâche impossible, la cause de l’échec, la commande exécutée si pertinente, les fichiers concernés.
 ## Rôles
-- L'agent analyste répond à des questions sur le corpus arménien (HYE) uniquement en écrivant et en lançant un script python.
+- L'agent analyste répond à des questions sur le corpus arménien (HYE) uniquement en écrivant scripts/analyser.py et en le lançant.
+- Les résultats de scripts/analyser.py doit apparaître dans output/result_1.py
 ## Repères
 - Données : `data/HYE_train.tsv`, `data/HYE_test_in-domain.tsv`, `data/HYE_test_out-of-domain.tsv`, colonnes `text_form form lemma pos`.
 - Tagset : `.vibe/skills/tagset/references/<LANGUE>_tagset.txt` (étiquette, tabulation, définition).
